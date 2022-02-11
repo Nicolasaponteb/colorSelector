@@ -13,43 +13,56 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
-    @IBAction func blackButton(_ sender: Any) {
-        
-        performSegue(withIdentifier: "blackVC", sender: self)
+    
+    @IBAction func yellowButton(_ sender: Any) {
+        performSegue(withIdentifier: "yellowColor", sender: self)
     }
-    
-    
-    @IBAction func pinkButton(_ sender: Any) {
-        
-        performSegue(withIdentifier: "pinkVC", sender: self)
-    }
-    
     
     @IBAction func blueButton(_ sender: Any) {
-        
-        performSegue(withIdentifier: "blueVC", sender: self)
+        performSegue(withIdentifier: "blueColor", sender: self)
+    }
+    
+    
+    @IBAction func redButton(_ sender: Any) {
+        performSegue(withIdentifier: "redColor", sender: self)
+    }
+    
+    @IBAction func greenButton(_ sender: Any) {
+        performSegue(withIdentifier: "greenColor", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "blackVC"{
+        if segue.identifier == "yellowColor"{
             
-            if let site = segue.destination as? ViewControllerBlack {
+            if let colors = segue.destination as?
+                ViewControllerColor{
                 
-                site.titulo = "Negro"
+                colors.colorTitle = "Amarillo"
+                colors.colorBackground = UIColor.yellow
             }
-        }else if segue.identifier == "pinkVC"{
+        }else if segue.identifier == "blueColor"{
             
-            if let site = segue.destination as? ViewControllerPink {
+            if let colors = segue.destination as?
+                ViewControllerColor{
                 
-                site.titulo = "Rosa"
+                colors.colorTitle = "Azul"
+                colors.colorBackground = UIColor.blue
             }
-        }else {
+        }else if segue.identifier == "redColor"{
             
-            if let site = segue.destination as? ViewControllerBlue {
+            if let colors = segue.destination as?
+                ViewControllerColor{
                 
-                site.titulo = "Azul"
+                colors.colorTitle = "Rojo"
+                colors.colorBackground = UIColor.red
+            }
+        }else{
+            if let colors = segue.destination as?
+                ViewControllerColor{
+                
+                colors.colorTitle = "Green"
+                colors.colorBackground = UIColor.green
             }
         }
     }
