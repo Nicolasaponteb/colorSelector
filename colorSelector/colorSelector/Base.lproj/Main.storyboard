@@ -11,7 +11,6 @@
         <!--Navigation Controller-->
         <scene sceneID="h3H-Me-MvU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jh7-x1-twD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="DhL-my-CUn" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wce-tQ-fV8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -21,13 +20,13 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GGM-Bz-sPD"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jh7-x1-twD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-228" y="13"/>
         </scene>
         <!--Menú-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="colorSelector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -93,6 +92,7 @@
                         <segue destination="gF8-IX-53e" kind="show" identifier="yellowColor" id="OPh-cj-uYE"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="554" y="13"/>
         </scene>
