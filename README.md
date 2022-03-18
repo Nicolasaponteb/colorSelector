@@ -6,8 +6,7 @@ The application is a menu with five buttons whose functions is that depending on
 
 ### Built with
 
-The project was built using the Swift programming language in Xcode.
-Git was used for version management.
+The project was built using the Swift programming language in Xcode and using UIKit framework. Git was used for version management.
 
 ## Important Code
 
